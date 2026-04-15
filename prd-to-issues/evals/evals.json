@@ -1,0 +1,23 @@
+{
+  "skill_name": "prd-to-issues",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Take this completed PRD and turn it into a GitHub issue structure with one epic issue, user-story child issues, and any technical, QA, rollout, or documentation issues that a delivery team would need. Draft the issues first and propose labels before creating anything.",
+      "expected_output": "The skill should read the PRD, propose a structured issue hierarchy, preserve PRD priorities, and produce draft issue content plus a recommended label set.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I already have a PRD for shared project boards. Please convert it into real GitHub issues for this repository, using sub-issues when possible and reusing existing labels where they make sense.",
+      "expected_output": "The skill should choose a review-aware creation flow, inspect or account for existing labels, create a main issue plus child issues, and preserve relationships in the issue structure.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Here is a PRD with detailed user stories and a MoSCoW section. Break it down into an epic issue, user story issues, QA work, rollout/docs work, and release coordination only where justified. Don't create busywork issues.",
+      "expected_output": "The skill should decompose the PRD intelligently, avoid over-fragmentation, keep acceptance criteria close to the right issues, and reflect MoSCoW priorities in the issue plan.",
+      "files": []
+    }
+  ]
+}
