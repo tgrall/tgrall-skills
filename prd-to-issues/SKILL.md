@@ -136,3 +136,17 @@ Use these bundled references:
 - `references/label-taxonomy.md` - default labels and reuse/creation rules
 - `references/issue-templates.md` - templates for the main issue and common child issue types
 - `references/github-creation-guide.md` - GitHub-aware creation flow and fallback behavior
+
+
+## Linking user stories to the main issue
+
+When creating GitHub issues, establish explicit links between all user story issues and the main epic:
+
+- Add a "Relates to" or "Part of" link from each user story issue back to the main epic
+- In the main epic issue body, maintain a summary section listing all child user story issues with links
+- Use GitHub's issue linking syntax: `Relates to #issue-number` or `Part of #issue-number`
+- If the platform supports parent/sub-issue relationships, use those as the primary hierarchy
+- For sibling user stories, add cross-references only when there are true dependencies or handoff points
+- Keep the main issue body updated as new user story issues are created, so it serves as a live index
+
+This ensures traceability, prevents orphaned work, and gives the team a single source of truth for the initiative's scope.

@@ -1,0 +1,23 @@
+{
+  "skill_name": "mvp-architecture",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have a PRD for NoteFlow, a browser-based note-taking app. Please generate a complete MVP architecture document using the default Next.js + ShadCN stack. I want the architecture to be detailed enough that I can combine it with the PRD and implement the whole thing in one coding session.",
+      "expected_output": "The skill should read the PRD, confirm the default stack, and produce a prescriptive architecture document covering project structure, components, theming, i18n, data model, testing strategy with Vitest and Playwright patterns, and an implementation roadmap.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Here is a PRD for an internal support tool. I want the architecture document but I need to use Vue instead of Next.js and Cypress instead of Playwright. Can you interview me about the changes and still produce a complete architecture?",
+      "expected_output": "The skill should detect the stack swap, interview the user about Vue-specific conventions and Cypress setup, and produce an equally prescriptive architecture document adapted to the different stack while keeping the same structure.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Generate an MVP architecture from this PRD. I especially care about the testing section — I want example test files for unit, integration, and e2e that I can copy-paste as starting points. Also make sure the theming supports at least 4 color themes plus dark mode.",
+      "expected_output": "The skill should produce an architecture document with an expanded testing section including ready-to-use test templates for all three levels, and a theming section with 4+ color themes defined in CSS variables with dark mode variants.",
+      "files": []
+    }
+  ]
+}
